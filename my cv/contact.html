@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishara CV Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17d9527542.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <nav>
+            <img src="images/LOGO3.png" class="logo">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="last.html">Home</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="about1.html">About</a></li>
+                <li><i class="fa-brands fa-unity"></i><a href="service.html">Servises</a></li>
+                <li><i class="fa-solid fa-briefcase"></i><a href="work.html">Portfolio</a></li>
+                <li><i class="fa-solid fa-comment"></i><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        
+    </div>
+
+<!-------------------about---------------->
+
+
+<!-------------------services-------------->
+
+
+<!-----------------------portfolio---------->
+
+
+
+<!----------------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:savindudilanka16@gmail.com"><i class="fa-solid fa-square-envelope"></i>savindudilanka16@gmail.com</p></a>
+                <p><a href="tel:"><i class="fa-solid fa-phone-volume"></i>+94711430243</p></a>
+                <p><i class="fa-solid fa-location-dot"></i>62/3C,Ginthota road,Kalegana,Galle</p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.57392609833!2d80.18768647456524!3d6.0530372284524905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173f82bcce217%3A0x66b88671e32b4ae6!2s62%20Kalegana%20-%20Gintota%20Rd%2C%20Galle%2080000!5e0!3m2!1sen!2slk!4v1700669108913!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/dilanka.rajapaksha.73"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/dilanka-rajapaksha-7790aa1b1/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dilanka16/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dilanka30?_t=8hZs1WuYqpu&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIBuRCet8JavLNJv2LExSnA"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://wa.me/0711430243"><i class="fa-brands fa-whatsapp"></i></a><br>
+                    <a href="_PEONY_16939350.apk"><i class="fa-brands fa-google-play"></i></a>
+                    
+                    <a href="https://t.me/+94711430243"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://t./me/+94711430243"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://t./me/+94711430243"><i class="fa-brands fa-viber"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+
+                </div>
+
+                
+
+                <a href="images/Ishara cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="emailsend(); reset(); return false;">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="email" name="Email"  placeholder="Your Email" required>
+                    <input type="text" name="Mobile"  placeholder="Mobile Number" required>
+                    <textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+               
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Designed by <i class="fa-solid fa-circle-user"></i> Dilanka</p><br>
+        <p><img src="images/qr code.png" width="3%" height="3%"></p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) {
+            icon.src = "images/sun.png";
+        }
+        else{
+            icon.src = "images/moon.png";
+        }
+    }
+</script>
+
+<script src="contact form to email.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var userName = document.getElementBYId('name').value;
+    var phone = document.getElementById('phone').value;
+    var email = document.getElementById()
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "amavimandara1@gmail.com",
+    Password : "2A8BF759BAFAAC21A4E63B79B53D6B01C365",
+    To : '',
+    From : "",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+</script>
+
+
+    
+</body>
+</html>
